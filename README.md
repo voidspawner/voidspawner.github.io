@@ -1,6 +1,7 @@
 # V O I D site
 
 ## About
+**⌜V O I D site⌟** is a storage of public **datasets** and site files
 
 <img src="https://github.com/voidspawner/void.ideology/blob/main/asset/image/logo.jpg" width="100%">
 
