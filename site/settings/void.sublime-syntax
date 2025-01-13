@@ -1,0 +1,87 @@
+%YAML 1.2
+name: V O I D
+file_extensions:
+  - void
+scope: source.void
+
+contexts:
+  main:
+    - match: >
+        ^\t*(['"])(.*?)(['"]:)(.*?)(,?)$
+      captures:
+        1: punctuation.definition.string.void
+        2: string.void
+        3: punctuation.definition.string.void
+        4: constant.numeric.void
+        5: punctuation.definition.comment.void
+
+    - match: '^\t*"'
+      scope: punctuation.definition.string.begin
+      push: quoted_text
+
+    - match: "^\t*'"
+      scope: punctuation.definition.string.begin
+      push: quoted_single_text
+
+    - match: "^\t*([\\[\\]{}].*?)(,?)$"
+      captures:
+        1: string.void
+        2: punctuation.definition.comment.void
+
+    - match: >
+        ^\t*.?[ ]?[+-]?[0-9][0-9_., "']*?[%]?( \w*)?$
+      scope: constant.numeric.void
+
+    - match: '^\t*(http[s]?://.*?$)'
+      captures:
+        1: markup.underline.link.void
+
+    - match: '^\t*([0-9a-zA-Z-_]+@[0-9a-zA-Z-_.]+$)'
+      captures:
+        1: markup.underline.link.void
+
+    - match: '^\t*(\+[0-9- \(\)]{5,}$)'
+      captures:
+        1: markup.underline.link.void
+
+    - match: '^\t*(?:true|false)$'
+      scope: constant.language.boolean.void
+
+    - match: '^\t*(?:none)$'
+      scope: constant.language.null.void
+
+    - match: >
+        ^(?:(\t){2})*[^\t"'\[].*?$
+      scope: variable.void.odd
+
+    - match: >
+        ^\t(?:(\t){2})*[^\t"'\[].*?$
+      scope: variable.void.even
+
+    - match: >
+        ^\t*[^"'\[].*?$
+      scope: variable.void.odd
+
+  quoted_text:
+    - meta_scope: string.void
+    
+    - match: '(?:(")(.*?)$)|$'
+      captures:
+        1: punctuation.definition.string.end.void
+        2: punctuation.definition.comment.void
+      pop: true
+
+    - match: '.+?'
+      scope: string.void
+
+  quoted_single_text:
+    - meta_scope: string.void
+    
+    - match: "(?:(')(.*?)$)|$"
+      captures:
+        1: punctuation.definition.string.end.void
+        2: punctuation.definition.comment.void
+      pop: true
+
+    - match: '.+?'
+      scope: string.void
