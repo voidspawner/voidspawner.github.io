@@ -3,7 +3,7 @@
 ## About
 **⌜V O I D site⌟** is a storage of public **datasets** and site files.
 
-<img src="https://github.com/voidspawner/void.ideology/blob/main/asset/image/logo.jpg" width="100%">
+<img src="https://github.com/voidspawner/voidspawner.github.io/blob/main/site/image/logo.jpg" width="100%">
 
 > [**About**](#about)・
 [**V O I D game**](#v-o-i-d-game)・
