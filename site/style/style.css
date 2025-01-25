@@ -1,0 +1,465 @@
+@font-face {
+	font-family: 'void';
+	src: url("../font/roundo.ttf") format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+* { 
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: black;
+	color: #FFF;
+	font-family: void, Helvetica, 'Microsoft JhengHei', Arial, sans-serif;
+	min-height: 100%;
+	width: 100%;
+}
+header {
+	position: fixed; 
+	top: 0; 
+	left: 0; 
+	min-width: 100%;
+	text-align: center;
+	margin-top: 10rem;
+	overflow-x: hidden;
+	visibility: hidden;
+	z-index: -1;
+}
+header .wrapper {}
+header .first {
+	letter-spacing: 8rem;
+	margin-right:-8.8rem;
+	font-size: 10rem;
+}
+header .second {
+	letter-spacing: 4.5rem;
+	margin-right:-4.8rem;
+	font-size: 5rem;
+}
+header .third {
+	letter-spacing: 1.68rem;
+	margin-right: -1.68rem;
+	font-size: 1rem;
+	margin-top: 1rem;
+}
+.en .third.appear {
+	letter-spacing: 2.18rem;
+	margin-right: -2.18rem;
+}
+.en .third.appear.show {
+	letter-spacing: 1.68rem;
+	margin-right: -1.68rem;
+}
+.zh .third.appear {
+	letter-spacing: 8.1rem;
+	margin-right: -8.1rem;
+}
+.zh .third.appear.show {
+	letter-spacing: 6.8rem;
+	margin-right: -6.8rem;
+}
+.fr .third.appear {
+	letter-spacing: 1.72rem;
+	margin-right: -1.72rem;
+}
+.fr .third.appear.show {
+	letter-spacing: 1.4rem;
+	margin-right: -1.4rem;
+}
+.es .third.appear {
+	letter-spacing: 1.63rem;
+	margin-right: -1.63rem;
+}
+.es .third.appear.show {
+	letter-spacing: 1.33rem;
+	margin-right: -1.33rem;
+}
+.pt .third.appear {
+	letter-spacing: 1.65rem;
+	margin-right: -1.65rem;
+}
+.pt .third.appear.show {
+	letter-spacing: 1.34rem;
+	margin-right: -1.34rem;
+}
+.it .third.appear {
+	letter-spacing: 1.8rem;
+	margin-right: -1.8rem;
+}
+.it .third.appear.show {
+	letter-spacing: 1.46rem;
+	margin-right: -1.46rem;
+}
+.de .third.appear {
+	letter-spacing: 1.62rem;
+	margin-right: -1.62rem;
+}
+.de .third.appear.show {
+	letter-spacing: 1.3rem;
+	margin-right: -1.3rem;
+}
+.ja .third.appear {
+	letter-spacing: 4.6rem;
+	margin-right: -4.6rem;
+}
+.ja .third.appear.show {
+	letter-spacing: 3.7rem;
+	margin-right: -3.7rem;
+}
+.ru .third.appear {
+	letter-spacing: 1.61rem;
+	margin-right: -1.61rem;
+}
+.ru .third.appear.show {
+	letter-spacing: 1.3rem;
+	margin-right: -1.3rem;
+}
+.ar .third.appear {
+	letter-spacing: 2.2rem;
+	margin-right: -2.2rem;
+}
+.ar .third.appear.show {
+	letter-spacing: 1.83rem;
+	margin-right: -1.83rem;
+}
+.hi .third.appear {
+	letter-spacing: 3.5rem;
+	margin-right: -3.5rem;
+}
+.hi .third.appear.show {
+	letter-spacing: 2.9rem;
+	margin-right: -2.9rem;
+}
+footer {
+	position: fixed; 
+	bottom: 0; 
+	left: 0; 
+	min-width: 100%;
+	text-align: center;
+	margin-bottom: 4rem;
+	overflow-x: hidden;
+	letter-spacing: 0.3rem;
+	line-height: 1.4rem;
+	font-size: 1rem;
+	text-align: center;
+	visibility: hidden;
+}
+footer a.email {
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
+}
+footer .language {
+	margin-bottom: 1rem;
+}
+h2 {
+	font-size: 2.2rem;
+	margin-top: 4rem;
+	margin-bottom: 1rem;
+}
+p {
+	margin-bottom: 0.8rem;
+}
+a {
+	color: #FFF;
+	text-decoration: none;
+}
+a:hover {
+	transition: all 1s ease;
+	animation: url_blur 2s;
+}
+a.selected {
+	color: #7d5cd1;	
+}
+@keyframes url_blur {
+	0% {
+		filter: blur(0);
+	}
+	50% {
+		filter: blur(0.1rem);
+	}
+	100% {
+		filter: blur(0);
+	}
+}
+.ltr {
+	direction: ltr;
+}
+.rtl {
+	direction: rtl;
+}
+.bg {
+	background-image: url("../image/bg.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;	
+	position: fixed; 
+	top: 0; 
+	left: 0; 
+	min-width: 100%;
+	min-height: 100%;
+	z-index: -2;
+}
+.social {
+	width: 100%;
+	text-align: center;
+	letter-spacing: 2.4rem;
+	margin-bottom: 0.8rem;
+}
+.social img {
+	height: 2rem;
+}
+.action {
+	width: 100%;
+	text-align: center;
+	letter-spacing: 2.4rem;
+	margin-top: 5rem;
+	margin-bottom: 8rem;
+}
+.action img {
+	height: 4rem;
+}
+.action .text {
+	display: inline-block;
+	height: 2rem;
+	text-align: center;
+	letter-spacing: 2.0rem;
+	margin-right:-2.0rem;
+	margin-top: 1rem;
+}
+.content {
+	margin-top: 46rem;
+	margin-bottom: 22rem;
+	width: 47.5rem;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 1.4rem;
+}
+.content .cols {
+	column-count: 4;
+	font-size: 1.1rem;
+	padding-top: 0.8rem;
+}
+.buy {
+	position: fixed;
+	right: 2rem;
+	bottom: 4rem;
+	width: 8rem;
+	height: 8rem;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.2s ease-in, visibility 0.2s ease-in;
+}
+.buy.show {
+	opacity: 1;
+	visibility: visible;
+}
+.buy img {
+	transition: all 0.3s ease;
+	animation: pulse-v 8s infinite;
+}
+.action img {
+	transition: all 0.3s ease;
+	animation: pulse-h 12s infinite;
+}
+.action .text {
+	transition: all 0.3s ease;
+	animation: pulse-spacing 12s infinite;
+}
+@keyframes pulse-v {
+	0% {
+		transform: scale(1.05, 0.95);
+	}
+	50% {
+		transform: scale(0.85, 1.05);
+	}
+	100% {
+		transform: scale(1.05, 0.95);
+	}
+}
+@keyframes pulse-h {
+	0% {
+		transform: scale(0.95, 1.05);
+	}
+	50% {
+		transform: scale(1.1, 0.88);
+	}
+	100% {
+		transform: scale(0.95, 1.05);
+	}
+}
+@keyframes pulse-spacing {
+	0% {
+		letter-spacing: 1.68rem;
+		margin-right: -1.68rem;
+	}
+	50% {
+		letter-spacing: 1.88rem;
+		margin-right: -1.88rem;
+	}
+	100% {
+		letter-spacing: 1.68rem;
+		margin-right: -1.68rem;
+	}
+}
+.unlock {
+	font-size: 0.8rem;
+	margin-top: 2rem;
+	margin-bottom: -3rem;
+	text-align: right;
+}
+.wait {
+	opacity: 0.5;
+}
+.progress {
+	background-image: linear-gradient(to right, rgb(1 1 1 / 0%), white);
+	border-radius: 0.4rem;
+	height: 0.4rem;
+	margin-top: 0.6rem;
+}
+.rtl .progress {
+	background-image: linear-gradient(to left, rgb(1 1 1 / 0%), white);	
+}
+.progress div {
+	background-color: #7d5cd1;
+	border-radius: 0.4rem;
+	height: 0.4rem;
+}
+.progress.appear div {
+	transition: all 3s ease-out;
+	width: 0%;
+}
+.progress.show.p0 div {
+	width: 0%;
+}
+.progress.show.p10 div {
+	width: 10%;
+}
+.progress.show.p20 div {
+	width: 20%;
+}
+.progress.show.p30 div {
+	width: 30%;
+}
+.progress.show.p50 div {
+	width: 40%;
+}
+.progress.show.p50 div {
+	width: 50%;
+}
+.progress.show.p60 div {
+	width: 60%;
+}
+.progress.show.p70 div {
+	width: 70%;
+}
+.progress.show.p80 div {
+	width: 80%;
+}
+.progress.show.p90 div {
+	width: 90%;
+}
+.progress.show.p100 div {
+	width: 100%;
+}
+.cols div {
+	margin-bottom: 0.6rem;
+}
+p.appear, .cols.appear {
+	transition: all 1s ease;
+	transform: scaleX(1.2);
+	filter: blur(0.1rem);
+}
+p.appear.show, .cols.appear.show {
+	transform: scaleX(1);
+	filter: blur(0);
+}
+img.appear {
+	transition: all 1.2s ease-out;
+	filter: blur(0.2rem);
+}
+img.appear.show {
+	filter: blur(0);
+}
+a.appear {
+	transition: all 1s ease;
+	opacity: 0;
+}
+a.show {
+	opacity: 1;
+}
+.first.appear {
+	transition: all 1s ease-out;
+	letter-spacing: 10.4rem;
+	margin-right:-10.4rem;
+	overflow: hidden;
+}
+.first.appear a {
+	transition: all 1s ease-out;
+}
+.first.appear.show {
+	letter-spacing: 8rem;
+	margin-right:-8.8rem;
+}
+.second.appear {
+	transition: all 3s ease-out;
+	letter-spacing: 5.85rem;
+	margin-right:-5.85rem;
+	overflow: hidden;
+}
+.second.appear.show {
+	letter-spacing: 4.5rem;
+	margin-right:-4.8rem;
+}
+.third.appear {
+	letter-spacing: 2.18rem;
+	margin-right: -2.18rem;
+}
+.third.appear.show {
+	transition: all 4s ease-out;
+	letter-spacing: 1.68rem;
+	margin-right: -1.68rem;
+}
+.quote {
+	padding: 0.6rem;
+	border-left: 0.3rem solid white;
+}
+.rtl .quote {
+	border: 0;
+	border-right: 0.3rem solid white;
+}
+.rtl .quote.ltr {
+	text-align: right;
+}
+.mascot {
+	position: relative;
+	width: 100%;
+}
+.mascot img {
+	z-index: -1;
+	width: 20rem;
+	height: 20rem;
+	position: absolute;
+	top: -9rem;
+	right: 5rem;
+	filter: brightness(1.5);
+	opacity: 0.4;
+}
+.mascot img.appear {
+	filter: blur(3em) brightness(1.5);
+	transform: scale(2);
+}
+.mascot img.show {
+	filter: blur(0) brightness(1.5);
+	transform: scale(1);
+}
+.rtl .mascot img {
+	right: unset;
+	left: 5rem;
+}
+.rtl .mascot img.appear {
+	transform: scaleX(-2);
+}
+.rtl .mascot img.show {
+	transform: scaleX(-1);
+}
