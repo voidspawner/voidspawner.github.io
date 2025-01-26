@@ -10,6 +10,7 @@
 	box-sizing: border-box;
 }
 body {
+	transition: all 1s ease;
 	background-color: black;
 	color: #FFF;
 	font-family: void, Helvetica, 'Microsoft JhengHei', Arial, sans-serif;
@@ -190,6 +191,7 @@ a.selected {
 	direction: rtl;
 }
 .bg {
+	transition: all 1s ease;
 	background-image: url("../image/bg.jpg");
 	background-repeat: no-repeat;
 	background-position: center center;	
