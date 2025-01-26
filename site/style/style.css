@@ -13,7 +13,7 @@ body {
 	transition: all 1s ease;
 	background-color: black;
 	color: #FFF;
-	font-family: void, Helvetica, 'Microsoft JhengHei', Arial, sans-serif;
+	font-family: void, Helvetica, 'Microsoft JhengHei', 'Noto Sans Devanagari', Arial, sans-serif;
 	min-height: 100%;
 	width: 100%;	
 	overflow-x: hidden;
