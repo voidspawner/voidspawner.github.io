@@ -139,10 +139,12 @@ header .third {
 .hi .third.appear {
 	letter-spacing: 3.5rem;
 	margin-right: -3.5rem;
+	font-feature-settings: "liga" 1;
 }
 .hi .third.appear.show {
 	letter-spacing: 2.9rem;
 	margin-right: -2.9rem;
+	font-feature-settings: "liga" 1;
 }
 footer {
 	position: fixed; 
