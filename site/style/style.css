@@ -536,7 +536,7 @@ a.show {
 		background-size: cover;
 	}
 	.content {
-		font-size: 2rem;
+		font-size: 2rem!important;
 	}
 }
 @supports (-webkit-touch-callout: none) {
