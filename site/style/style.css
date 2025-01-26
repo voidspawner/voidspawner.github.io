@@ -237,6 +237,11 @@ a.selected {
 	margin-right: auto;
 	font-size: 1.4rem;
 }
+@media (max-width: 768px) {
+	.content {
+		width: 100%;
+	}
+}
 .content .cols {
 	column-count: 4;
 	font-size: 1.1rem;
