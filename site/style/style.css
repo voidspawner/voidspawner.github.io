@@ -15,7 +15,8 @@ body {
 	color: #FFF;
 	font-family: void, Helvetica, 'Microsoft JhengHei', Arial, sans-serif;
 	min-height: 100%;
-	width: 100%;
+	width: 100%;	
+	overflow-x: hidden;
 }
 header {
 	position: fixed; 
@@ -28,22 +29,30 @@ header {
 	visibility: hidden;
 	z-index: -1;
 }
-header .wrapper {}
+header .wrapper {
+	overflow-x: hidden;	
+}
 header .first {
 	letter-spacing: 8rem;
 	margin-right:-8.8rem;
 	font-size: 10rem;
+	white-space: nowrap;
+	overflow-x: hidden;
 }
 header .second {
 	letter-spacing: 4.5rem;
 	margin-right:-4.8rem;
 	font-size: 5rem;
+	white-space: nowrap;
+	overflow-x: hidden;
 }
 header .third {
 	letter-spacing: 1.68rem;
 	margin-right: -1.68rem;
 	font-size: 1rem;
 	margin-top: 1rem;
+	white-space: nowrap;
+	overflow-x: hidden;
 }
 .en .third.appear {
 	letter-spacing: 2.18rem;
@@ -237,9 +246,9 @@ a.selected {
 	margin-right: auto;
 	font-size: 1.4rem;
 }
-@media (max-width: 768px) {
+@media (orientation: portrait) {
 	.content {
-		width: 100%;
+		width: 100%!important;
 	}
 }
 .content .cols {
