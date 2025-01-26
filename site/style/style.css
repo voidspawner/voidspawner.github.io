@@ -250,7 +250,7 @@ a.selected {
 }
 .content .cols {
 	column-count: 4;
-	font-size: 1.1rem;
+	font-size: 79%;
 	padding-top: 0.8rem;
 }
 .buy {
@@ -316,7 +316,7 @@ a.selected {
 	}
 }
 .unlock {
-	font-size: 0.8rem;
+	font-size: 58%;
 	margin-top: 2rem;
 	margin-bottom: -3rem;
 	text-align: right;
@@ -535,12 +535,20 @@ a.show {
 	background-position-y: 0.5rem;
 }
 
-@media (pointer: coarse)  {
+@media (pointer: coarse) {
+	@media (orientation: portrait) {
+		h2 {
+			font-size: 3.8rem!important;
+		}
+		.content {
+			font-size: 2.6rem!important;
+		}
+		.action .text {
+			font-size: 130%;
+		}
+	}
 	.bg {
 		background-size: cover;
-	}
-	.content {
-		font-size: 3rem!important;
 	}
 }
 @supports (-webkit-touch-callout: none) {
