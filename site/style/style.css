@@ -490,6 +490,10 @@ a.show {
     padding-left: 2rem;
 	background-repeat: no-repeat;
 }
+.go:hover {
+	transition: all 1s ease;
+	animation: url_blur 2s;
+}
 .go1 {
 	top: 2rem;
 	opacity: 1;
