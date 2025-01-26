@@ -15,6 +15,7 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
+	background-size: cover; 
 	color: #FFF;
 	font-family: void, Helvetica, 'Microsoft JhengHei', Arial, sans-serif;
 	min-height: 100%;
