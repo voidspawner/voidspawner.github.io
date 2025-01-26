@@ -246,11 +246,6 @@ a.selected {
 	margin-right: auto;
 	font-size: 1.4rem;
 }
-@media (orientation: portrait) {
-	.content {
-		width: 100%!important;
-	}
-}
 .content .cols {
 	column-count: 4;
 	font-size: 1.1rem;
