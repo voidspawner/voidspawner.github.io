@@ -206,7 +206,6 @@ a.selected {
 	background-image: url("../image/bg.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: cover;
 	position: fixed; 
 	top: 0; 
 	left: 0; 
@@ -214,7 +213,12 @@ a.selected {
 	min-height: 100%;
 	z-index: -2;
 }
-.social {
+@media (max-width: 768px) {
+	.bg {
+		background-size: cover;
+	}
+}
+ .social {
 	width: 100%;
 	text-align: center;
 	letter-spacing: 2.4rem;
@@ -491,4 +495,58 @@ a.show {
 		letter-spacing: normal!important;
 		margin-right: 0!important;
 	}
+}
+.go {
+	width: 6rem;
+	height: 6rem;
+	border-radius: 3rem;
+	border: 0.4rem solid white;
+	position: fixed;
+	left: -3rem;
+	cursor: pointer;
+	text-align: center;
+    font-size: 2rem;
+    line-height: 5.3rem;
+    padding-left: 2rem;
+	background-repeat: no-repeat;
+}
+.go1 {
+	top: 2rem;
+	opacity: 1;
+	background-image: url("../image/gamepad.svg");
+	background-size: 4rem 4rem;
+	background-position-x: 3rem;
+	background-position-y: 0.5rem;
+}
+.go2 {
+	top: 10rem;
+	opacity: 0.9;
+	background-image: url("../image/comment.svg");
+	background-size: 4rem 4rem;
+	background-position-x: 3rem;
+	background-position-y: 0.5rem;
+}
+.go3 {
+	top: 18rem;
+	opacity: 0.8;
+	background-image: url("../image/screwdriver-wrench.svg");
+	background-size: 4rem 4rem;
+	background-position-x: 3rem;
+	background-position-y: 0.5rem;
+}
+.go4 {
+	top: 26rem;
+	opacity: 0.7;
+	background-image: url("../image/image.svg");
+	background-size: 4rem 4rem;
+	background-position-x: 3rem;
+	background-position-y: 0.5rem;
+}
+.go5 {
+	top: 34rem;
+	opacity: 0.6;
+	background-image: url("../image/address-card.svg");
+	background-size: 4rem 4rem;
+	background-position-x: 3rem;
+	background-position-y: 0.5rem;
 }
