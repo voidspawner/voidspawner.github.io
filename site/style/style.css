@@ -479,7 +479,8 @@ a.show {
 }
 @supports (-webkit-touch-callout: none) {
 	.hi .action .text {
-		transition: all 0.3s ease;
+		letter-spacing: normal!important;
+		margin-right: 0!important;
 		animation: unset;
 	}
 	.hi .third.appear {
