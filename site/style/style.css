@@ -206,7 +206,6 @@ a.selected {
 	background-image: url("../image/bg.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: cover;
 	position: fixed; 
 	top: 0; 
 	left: 0; 
@@ -214,7 +213,7 @@ a.selected {
 	min-height: 100%;
 	z-index: -2;
 }
-@media (max-width: 768px) {
+@media (pointer: coarse)  {
 	.bg {
 		background-size: cover;
 	}
