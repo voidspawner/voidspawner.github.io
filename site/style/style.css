@@ -146,13 +146,12 @@ header .third {
 }
 @supports (-webkit-touch-callout: none) {
 	.hi .third.appear {
-		letter-spacing: normal!important;
-		margin-right: 0!important;
+		letter-spacing: 1.5rem;
+		margin-right: -1.5rem;
 	}
 	.hi .third.appear.show {
-		color: red;
-		letter-spacing: normal!important;
-		margin-right: 0!important;
+		letter-spacing: 1.9rem;
+		margin-right: -1.9rem;
 	}
 }
 footer {
