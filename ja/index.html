@@ -2,22 +2,37 @@
 <html lang="ja">
 	<head>
 		<meta charset="UTF-8">
-		<meta name="description" content="無限の世界クリエーター">
+		<meta name="description" content="">
 		<meta name="keywords" content="void,void spawner,voidspawner,void game,void social,void content,void lang,void tech,void os,void ai,void db,void cloud,void medicine,void farm,void booster,void chip,void gen,void energy,void computer,void parts,void bot,void transport,void lock,void power">
 		<meta name="author" content="V O I D spawner">
 		<link rel="icon" type="image/svg+xml" href="/site/image/icon.svg">
-		<link rel="shortcut icon" type="image/svg+xml" href="/site/image/icon.svg">
+		<link rel="icon" type="image/png" href="/site/image/icon.png">
+		<link rel="icon" type="image/png" sizes="192x192" href="/site/image/icon192.png">
+		<link rel="icon" type="image/png" sizes="512x512" href="/site/image/icon512.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/site/image/icon180.png">
+		<link rel="manifest" href="/site/settings/manifest.json">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="apple-mobile-web-app-title" content="V O I D spawner">
+		<meta name="theme-color" content="#000000">
 		<link rel="stylesheet" href="/site/style/style.css">
 		<script src="/site/js/site.js"></script>
 		<title>V O I D spawner</title>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-6DYNXPK464"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-6DYNXPK464');
+		</script>
 	</head>
 	<body class="ja">
 		<div src="/site/image/bg.jpg" class="bg"></div>
-		<div class="go go1">&nbsp;</div>
-		<div class="go go2">&nbsp;</div>
-		<div class="go go3">&nbsp;</div>
-		<div class="go go4">&nbsp;</div>
-		<div class="go go5">&nbsp;</div>
+		<div class="go go1" onclick="go('/ja/game');"><a href="/ja/game">&nbsp;</a></div>
+		<div class="go go2" onclick="go('/ja/chat');"><a href="/ja/chat">&nbsp;</a></div>
+		<div class="go go3" onclick="go('/ja/tool');"><a href="/ja/tool">&nbsp;</a></div>
+		<div class="go go4" onclick="go('/ja/asset');"><a href="/ja/asset">&nbsp;</a></div>
+		<div class="go go5" onclick="go('/ja/social');"><a href="/ja/social">&nbsp;</a></div>
 		<header>
 			<div class="first appear"><a href="/ja">VOID</a></div>
 			<div class="second appear">spawner</div>
@@ -29,6 +44,7 @@
 			</div>
 		</header>
 		<div class="content">
+			
 			<h2>無限キャラクタークリエーター</h2>
 			<p>
 				<img src="/site/image/chars.webp" style="width: 100%" class="appear">
@@ -57,7 +73,7 @@
 				自分のストーリーを保存して友達と共有しましょう。
 			</p>
 
-			<div class="unlock"><b>800</b> 解除のための販売コピー数<div class="progress p20 appear"><div>&nbsp;</div></div></div>
+			<div class="home.unlock"><b>800</b> 解除のための販売コピー数<div class="progress p20 appear"><div>&nbsp;</div></div></div>
 			<h2>無限2Dゲームクリエーター</h2>
 			<div class="mascot">
 				<img src="/site/image/void-2d.webp" class="appear">
@@ -69,7 +85,7 @@
 				<b>マルチプレイヤー</b>で友達と対戦したり、AIの敵と戦ったりしましょう。一緒にゲームを作ることも可能です。
 			</p>
 
-			<div class="unlock"><b>8&nbsp;000</b> 解除のための販売コピー数<div class="progress p10 appear"><div>&nbsp;</div></div></div>
+			<div class="home.unlock"><b>8&nbsp;000</b> 解除のための販売コピー数<div class="progress p10 appear"><div>&nbsp;</div></div></div>
 			<h2>無限3Dゲームクリエーター</h2>
 			<div class="mascot">
 				<img src="/site/image/void-3d.webp" class="appear">
@@ -97,25 +113,25 @@
 			</p>
 			<div class="cols appear">
 				<div><a href="/ja/story" class="appear">ストーリー</a></div>
-				<div><a href="/ja/city" class="appear">ゲーム</a></div>
-				<div><a href="/ja/movie" class="appear">映画</a></div>
-				<div><a href="/ja/anime" class="appear">アニメ</a></div>
-				<div><a href="/ja/character" class="appear">キャラクター</a></div>
-				<div><a href="/ja/background" class="appear">背景</a></div>
-				<div><a href="/ja/goods" class="appear">商品</a></div>
-				<div><a href="/ja/nature" class="appear">自然</a></div>
-				<div><a href="/ja/pixel" class="appear">ピクセル</a></div>
-				<div><a href="/ja/video" class="appear">動画</a></div>
+				<div><a href="/ja/media/game" class="appear">ゲーム</a></div>
+				<div><a href="/ja/media/anime" class="appear">アニメ</a></div>
+				<div><a href="/ja/media/movie" class="appear">映画</a></div>
+				<div><a href="/ja/image/character" class="appear">キャラクター</a></div>
+				<div><a href="/ja/image/background" class="appear">背景</a></div>
+				<div><a href="/ja/image/things" class="appear">物</a></div>
+				<div><a href="/ja/image/nature" class="appear">自然</a></div>
+				<div><a href="/ja/image/pixel" class="appear">ピクセル</a></div>
+				<div><a href="/ja/image/ui" class="appear">UI</a></div>
+				<div><a href="/ja/image/art" class="appear">アート</a></div>
+				<div><a href="/ja/video" class="appear">ビデオ</a></div>
 				<div><a href="/ja/music" class="appear">音楽</a></div>
-				<div><a href="/ja/sound" class="appear">音声</a></div>
-				<div><a href="/ja/language" class="appear">言語</a></div>
-				<div><a href="/ja/country" class="appear">国</a></div>
-				<div><a href="/ja/city" class="appear">都市</a></div>
-				<div><a href="/ja/planet" class="appear">惑星</a></div>
-				<div><a href="/ja/star" class="appear">星</a></div>
-				<div><a href="/ja/spacecraft" class="appear">宇宙船</a></div>
-				<div><a href="/" class="appear">&nbsp;</a></div>
-				<div><a href="/" class="appear">&nbsp;</a></div>
+				<div><a href="/ja/sound" class="appear">音</a></div>
+				<div><a href="/ja/world/language" class="appear">言語</a></div>
+				<div><a href="/ja/world/country" class="appear">国</a></div>
+				<div><a href="/ja/world/city" class="appear">都市</a></div>
+				<div><a href="/ja/world/planet" class="appear">惑星</a></div>
+				<div><a href="/ja/world/star" class="appear">星</a></div>
+				<div><a href="/ja/world/spacecraft" class="appear">宇宙船</a></div>
 			</div>
 
 			<h2>無限のvoidsクリエーター</h2>
@@ -132,18 +148,19 @@
 				現在、<b>ChatGPT</b> などのサードパーティサービスに対してリクエストごとに料金が発生するため、ボイドを使用して支払う必要があります。ボイドを購入するか、<b>オンラインに滞在</b>することで、自動的にボイドが付与されます。
 			</p>
 			<p class="appear">
-				<b>Stable Diffusion</b>、<b>Google TTS</b>、<b>Ollama</b> などのAIは<b> 無料</b>で利用可能です。
+				<b>Stable Diffusion</b> · <b>Google TTS</b> · <b>Ollama</b> などのAIは<b> 無料</b>で利用可能です。
 			</p>
 			<p class="appear">
 				<b>V O I D ai</b> は現在開発中で、<b>無制限かつ永久無料</b>となる予定です。
 			</p>
+
 		</div>
 		<footer>
 			<div class="language ltr">
 				<a href="/en">en</a> ·
 				<a href="/zh">zh</a> ·
 				<a href="/fr">fr</a> ·
-				<a href="/es"{selected_es}>es</a> ·
+				<a href="/es">es</a> ·
 				<a href="/pt">pt</a> ·
 				<a href="/it">it</a> ·
 				<a href="/de">de</a> ·
@@ -154,7 +171,7 @@
 			</div>
 			<div class="social">
 				<a href="https://github.com/voidspawner"><img src="/site/image/github.svg"></a>
-			</div>			
+			</div>
 			<div>
 				ご質問はありますか？<br>
 				<a href="" class="email">&nbsp;</a>

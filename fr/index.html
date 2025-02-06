@@ -2,22 +2,37 @@
 <html lang="fr">
 	<head>
 		<meta charset="UTF-8">
-		<meta name="description" content="créateur de mondes infinis">
+		<meta name="description" content="">
 		<meta name="keywords" content="void,void spawner,voidspawner,void game,void social,void content,void lang,void tech,void os,void ai,void db,void cloud,void medicine,void farm,void booster,void chip,void gen,void energy,void computer,void parts,void bot,void transport,void lock,void power">
 		<meta name="author" content="V O I D spawner">
 		<link rel="icon" type="image/svg+xml" href="/site/image/icon.svg">
-		<link rel="shortcut icon" type="image/svg+xml" href="/site/image/icon.svg">
+		<link rel="icon" type="image/png" href="/site/image/icon.png">
+		<link rel="icon" type="image/png" sizes="192x192" href="/site/image/icon192.png">
+		<link rel="icon" type="image/png" sizes="512x512" href="/site/image/icon512.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/site/image/icon180.png">
+		<link rel="manifest" href="/site/settings/manifest.json">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="apple-mobile-web-app-title" content="V O I D spawner">
+		<meta name="theme-color" content="#000000">
 		<link rel="stylesheet" href="/site/style/style.css">
 		<script src="/site/js/site.js"></script>
 		<title>V O I D spawner</title>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-6DYNXPK464"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-6DYNXPK464');
+		</script>
 	</head>
 	<body class="fr">
 		<div src="/site/image/bg.jpg" class="bg"></div>
-		<div class="go go1">&nbsp;</div>
-		<div class="go go2">&nbsp;</div>
-		<div class="go go3">&nbsp;</div>
-		<div class="go go4">&nbsp;</div>
-		<div class="go go5">&nbsp;</div>
+		<div class="go go1" onclick="go('/fr/game');"><a href="/fr/game">&nbsp;</a></div>
+		<div class="go go2" onclick="go('/fr/chat');"><a href="/fr/chat">&nbsp;</a></div>
+		<div class="go go3" onclick="go('/fr/tool');"><a href="/fr/tool">&nbsp;</a></div>
+		<div class="go go4" onclick="go('/fr/asset');"><a href="/fr/asset">&nbsp;</a></div>
+		<div class="go go5" onclick="go('/fr/social');"><a href="/fr/social">&nbsp;</a></div>
 		<header>
 			<div class="first appear"><a href="/fr">VOID</a></div>
 			<div class="second appear">spawner</div>
@@ -29,6 +44,7 @@
 			</div>
 		</header>
 		<div class="content">
+			
 			<h2>Créateur de personnages infinis</h2>
 			<p>
 				<img src="/site/image/chars.webp" style="width: 100%" class="appear">
@@ -57,7 +73,7 @@
 				Enregistrez vos histoires et partagez-les avec des amis.
 			</p>
 
-			<div class="unlock"><b>800</b> copies vendues pour débloquer<div class="progress p20 appear"><div>&nbsp;</div></div></div>
+			<div class="home.unlock"><b>800</b> copies vendues pour débloquer<div class="progress p20 appear"><div>&nbsp;</div></div></div>
 			<h2>Créateur de jeux 2D infinis</h2>
 			<div class="mascot">
 				<img src="/site/image/void-2d.webp" class="appear">
@@ -69,7 +85,7 @@
 				Jouez avec des amis en <b>multijoueur</b>, les uns contre les autres ou contre des ennemis IA. Créez des jeux ensemble.
 			</p>
 
-			<div class="unlock"><b>8&nbsp;000</b> copies vendues pour débloquer<div class="progress p10 appear"><div>&nbsp;</div></div></div>
+			<div class="home.unlock"><b>8&nbsp;000</b> copies vendues pour débloquer<div class="progress p10 appear"><div>&nbsp;</div></div></div>
 			<h2>Créateur de jeux 3D infinis</h2>
 			<div class="mascot">
 				<img src="/site/image/void-3d.webp" class="appear">
@@ -96,26 +112,26 @@
 				Créez des images, des vidéos, des graphismes pixelisés, des objets 3D, de la musique, des sons, des discours, des textes, des ensembles de données, des supports éducatifs. Utilisez-les pour vos besoins ou pour créer vos propres jeux.
 			</p>
 			<div class="cols appear">
-				<div><a href="/fr/story" class="appear">histoire</a></div>
-				<div><a href="/fr/city" class="appear">jeu</a></div>
-				<div><a href="/fr/movie" class="appear">film</a></div>
-				<div><a href="/fr/anime" class="appear">anime</a></div>
-				<div><a href="/fr/character" class="appear">personnage</a></div>
-				<div><a href="/fr/background" class="appear">arrière-plan</a></div>
-				<div><a href="/fr/goods" class="appear">biens</a></div>
-				<div><a href="/fr/nature" class="appear">nature</a></div>
-				<div><a href="/fr/pixel" class="appear">pixel</a></div>
-				<div><a href="/fr/video" class="appear">vidéo</a></div>
-				<div><a href="/fr/music" class="appear">musique</a></div>
-				<div><a href="/fr/sound" class="appear">son</a></div>
-				<div><a href="/fr/language" class="appear">langue</a></div>
-				<div><a href="/fr/country" class="appear">pays</a></div>
-				<div><a href="/fr/city" class="appear">ville</a></div>
-				<div><a href="/fr/planet" class="appear">planète</a></div>
-				<div><a href="/fr/star" class="appear">étoile</a></div>
-				<div><a href="/fr/spacecraft" class="appear">vaisseau spatial</a></div>
-				<div><a href="/" class="appear">&nbsp;</a></div>
-				<div><a href="/" class="appear">&nbsp;</a></div>
+				<div><a href="/fr/story" class="appear">Histoire</a></div>
+				<div><a href="/fr/media/game" class="appear">Jeu</a></div>
+				<div><a href="/fr/media/anime" class="appear">Anime</a></div>
+				<div><a href="/fr/media/movie" class="appear">Film</a></div>
+				<div><a href="/fr/image/character" class="appear">Personnage</a></div>
+				<div><a href="/fr/image/background" class="appear">Fond</a></div>
+				<div><a href="/fr/image/things" class="appear">Choses</a></div>
+				<div><a href="/fr/image/nature" class="appear">Nature</a></div>
+				<div><a href="/fr/image/pixel" class="appear">Pixel</a></div>
+				<div><a href="/fr/image/ui" class="appear">IU</a></div>
+				<div><a href="/fr/image/art" class="appear">Art</a></div>
+				<div><a href="/fr/video" class="appear">Vidéo</a></div>
+				<div><a href="/fr/music" class="appear">Musique</a></div>
+				<div><a href="/fr/sound" class="appear">Son</a></div>
+				<div><a href="/fr/world/language" class="appear">Langue</a></div>
+				<div><a href="/fr/world/country" class="appear">Pays</a></div>
+				<div><a href="/fr/world/city" class="appear">Ville</a></div>
+				<div><a href="/fr/world/planet" class="appear">Planète</a></div>
+				<div><a href="/fr/world/star" class="appear">Étoile</a></div>
+				<div><a href="/fr/world/spacecraft" class="appear">Vaisseau spatial</a></div>
 			</div>
 
 			<h2>Créateur de voids infinis</h2>
@@ -132,31 +148,32 @@
 				Actuellement, vous devez utiliser des voids pour payer les services tiers tels que <b>ChatGPT</b>, qui sont facturés à chaque demande. Vous pouvez acheter des voids ou <b>rester en ligne</b>, ils seront alors crédités automatiquement.
 			</p>
 			<p class="appear">
-				Les IA comme <b>Stable Diffusion</b>, <b>Google TTS</b>, <b>Ollama</b>, etc. sont disponibles <b>gratuitement</b>.
+				Les IA comme <b>Stable Diffusion</b> · <b>Google TTS</b> · <b>Ollama</b> etc. sont disponibles <b>gratuitement</b>.
 			</p>
 			<p class="appear">
 				<b>V O I D ai</b> est en cours de développement et sera <b>Gratuit Pour Toujours Illimité</b>.
 			</p>
+
 		</div>
 		<footer>
 			<div class="language ltr">
 				<a href="/en">en</a> ·
 				<a href="/zh">zh</a> ·
 				<a href="/fr" class="selected">fr</a> ·
-				<a href="/es"{selected_es}>es</a> ·
+				<a href="/es">es</a> ·
 				<a href="/pt">pt</a> ·
 				<a href="/it">it</a> ·
 				<a href="/de">de</a> ·
-				<a href="/ja"{selected_ja}>ja</a> ·
+				<a href="/ja">ja</a> ·
 				<a href="/ru">ru</a> ·
 				<a href="/ar">ar</a> ·
 				<a href="/hi">hi</a>
 			</div>
 			<div class="social">
 				<a href="https://github.com/voidspawner"><img src="/site/image/github.svg"></a>
-			</div>			
+			</div>
 			<div>
-				Des questions ?<br>
+				Des footer.questions ?<br>
 				<a href="" class="email">&nbsp;</a>
 			</div>
 		</footer>

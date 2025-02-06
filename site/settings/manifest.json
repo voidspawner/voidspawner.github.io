@@ -1,0 +1,22 @@
+{
+	"name": "V O I D spawner",
+	"short_name": "V O I D spawner",
+	"icons": [
+		{
+			"src": "/site/image/icon192.png",
+			"type": "image/png",
+			"sizes": "192x192",
+			"purpose": "any"
+		},
+		{
+			"src": "/site/image/icon512.png",
+			"type": "image/png",
+			"sizes": "512x512",
+			"purpose": "any"
+		}
+	],
+	"start_url": "/",
+	"display": "standalone",
+	"background_color": "#000000",
+	"theme_color": "#000000"
+}
