@@ -1,5 +1,5 @@
 
-var header, footer, buy, body, html, appear;
+var header, footer, buy, body, html, appear, character;
 
 function rescroll(e) {
 	const height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
@@ -37,6 +37,9 @@ function rescroll(e) {
 			item.classList.add('show');
 		}
 	}
+	if (opacity < 0.2) {
+		character.style.bottom = `${-14 + scroll * 4}rem`;
+	}
 }
 
 window.addEventListener('load', function() {
@@ -46,6 +49,7 @@ window.addEventListener('load', function() {
 	appear = document.getElementsByClassName('appear');
 	body = document.body;
 	html = document.documentElement;
+	character = document.getElementsByClassName('character').item(0);
 	window.addEventListener('scroll', rescroll);
 	setTimeout(function() {
 		const link = footer.getElementsByClassName('email').item(0);

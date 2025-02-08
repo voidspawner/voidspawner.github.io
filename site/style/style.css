@@ -29,7 +29,7 @@ header {
 	margin-top: 10rem;
 	overflow-x: hidden;
 	visibility: hidden;
-	z-index: -1;
+	z-index: -10;
 }
 header .wrapper {
 	overflow-x: hidden;	
@@ -225,7 +225,7 @@ a.selected {
 	left: 0; 
 	min-width: 100%;
 	min-height: 100%;
-	z-index: -2;
+	z-index: -20;
 }
 .social {
 	width: 100%;
@@ -551,6 +551,18 @@ a.show {
 	background-position-x: 3rem;
 	background-position-y: 0.5rem;
 }
+.character {
+	width: 40rem;
+	height: 60rem;
+	position: fixed;
+	bottom: -14rem;
+	right: 0;
+	background-image: url("../image/catgirl.webp");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: bottom;
+	z-index: -1;
+}
 
 @media (pointer: coarse) {
 	@media (orientation: portrait) {
@@ -573,6 +585,20 @@ a.show {
 	.bg {
 		background-size: cover;
 	}
+	.character {
+		width: 60rem;
+		height: 100rem;
+		bottom: -20rem;
+		right: -10rem;
+	}
+
+	@media (orientation: landscape) {
+		.character {
+			height: 100rem;
+			width: 30rem;
+			right: 0;
+		}
+	}
 }
 @supports (-webkit-touch-callout: none) {
 	.hi .action .text {
@@ -588,4 +614,23 @@ a.show {
 		letter-spacing: normal!important;
 		margin-right: 0!important;
 	}
+}
+input {
+	font-size: 1.4rem;
+	background: none;
+	border: none;
+	color: white;
+	padding: 0.4rem;
+	width: 100%;
+}
+input:focus {
+	outline: none;
+}
+.divider {
+	width: 100%;
+	height: 0.4rem;
+	background: white;
+	border: none;
+	border-radius: 0.2rem;
+	margin-top: 2rem;
 }
